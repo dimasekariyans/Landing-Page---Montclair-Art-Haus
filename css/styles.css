@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* font */
+@font-face {
+  font-family: "collier-semibold";
+  src: url("../fonts/fonnts.com-Collier-Semibold-.otf") format(opentype);
+}
+
+@font-face {
+  font-family: "collier-light";
+  src: url("../fonts/fonnts.com-Collier-Light.otf") format(opentype);
+}
+
+@font-face {
+  font-family: "collier-ex-light";
+  src: url("../fonts/fonnts.com-Collier-Ex-Light.otf") format(opentype);
+}
+/* font end */
+/* header */
+.nav-hero-container {
+  background-image: url(../img/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* header end */
+/* nav */
+.nav-container {
+  display: grid;
+  grid-template-areas: "nav-left nav-right";
+  grid-template-columns: 1fr 2fr;
+  height: 100px;
+  padding: 0 100px;
+  /* background: #12130d; */
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #f6f6ec;
+}
+
+.nav-logo {
+  grid-area: "nav-left";
+}
+
+p.nav-logo {
+  font-family: "collier-semibold", serif;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.nav-right {
+  grid-area: "nav-right";
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-right a {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #f6f6ec;
+}
+/* nav end */
+/* hero section */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  padding: 0 100px;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: paleturquoise; */
+}
+
+p.hero-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #f6f6ec;
+}
+
+p.hero-sub-heading {
+  font-family: "collier-semibold", serif;
+  font-weight: normal;
+  font-size: 48px;
+  color: #f6f6ec;
+}
+
+button.btn-hero {
+  width: 250px;
+  height: 70px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #f6f6ec;
+  margin-top: 20px;
+}
+
+button.btn-hero a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #12130d;
+  text-decoration: none;
+}
+/* hero section end*/
+/* exhibitions */
+/* exh heading */
+.exhibitions-container {
+  height: 1610px;
+  background-color: #f6f6ec;
+  padding: 100px;
+  display: grid;
+  grid-template-areas: "exh-heading-left exh-heading-right exh-heading-space";
+  grid-template-columns: 650px 800px auto;
+  grid-template-rows: 110px;
+}
+
+.exhibitions-heading {
+  grid-area: 1 / 1 / 2 / 4;
+  height: 70px;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #12130d;
+}
+
+p.ex-heading-left {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  align-self: center;
+}
+
+.ex-heading-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ex-heading-right p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+/* exh heading end */
+/* exh content */
+.exhibitions-content-container {
+  display: grid;
+  grid-template-areas:
+    "exh-content-image ex-content-detail ex-content-space"
+    "exh-content-image-2 ex-content-detail-2 ex-content-space2"
+    "exh-content-image-3 ex-content-detail-3 ex-content-space3";
+  grid-template-columns: 650px 800px auto;
+  grid-template-rows: 445px 400px 400px;
+}
+
+.exhibitions-content-container p.ex-content-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.exhibitions-content-container p.ex-content-date {
+  font-family: "collier-light", serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.exhibitions-content-container p.ex-content-desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.exhibitions-content-container button {
+  width: 180px;
+  height: 50px;
+  border: 2px solid #12130d;
+  border-radius: 50px;
+  background-color: transparent;
+  margin-bottom: 40px;
+}
+
+.exhibitions-content-container button a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: #12130d;
+}
+
+.ex-content-detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ex-content-image {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  width: 600px;
+  height: 360px;
+  background-image: url(../img/hero-img.jpg);
+  margin-top: 40px;
+}
+
+.ex-content-detail {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* exh content end */
+/* exhibitions end */
