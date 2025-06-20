@@ -129,7 +129,6 @@ button.btn-hero a {
 .exhibitions-heading {
   grid-area: 1 / 1 / 2 / 4;
   height: 70px;
-  /* background-color: aquamarine; */
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #12130d;
@@ -358,10 +357,167 @@ p.ex-heading-left {
 
 .about-container div.btn-about-bottom button.btn-about-load a {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   text-decoration: none;
   color: #12130d;
 }
 
 /* about end */
+
+/* collections */
+.collections-container {
+  display: grid;
+  grid-template-areas:
+    "col-heading col-heading col-heading"
+    "col-gallery col-gallery col-gallery"
+    "btn-gallery btn-gallery btn-gallery";
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 170px 1628px 190px;
+}
+
+.col-heading {
+  grid-area: 1 / 1 / 2 / 4;
+  /* background-color: #aa7e04; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 100px 0px 100px;
+  border-bottom: 2px solid #12130d;
+}
+
+.col-gallery-container {
+  height: 1582px;
+  width: 100%;
+  padding: 40px 100px 0 100px;
+  /* background-color: rgb(110, 158, 160); */
+  grid-area: col-gallery;
+  display: grid;
+  grid-template-areas: "col-gallery-left col-gallery-center col-gallery-right";
+  grid-column: 540px 540px 540px;
+  gap: 50px;
+}
+
+.btn-gallery {
+  grid-area: btn-gallery;
+  padding: 40px 100px 100px 100px;
+  display: flex;
+  justify-content: center;
+}
+.btn-gallery button.btn-gallerya {
+  width: 250px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #12130d;
+}
+
+.btn-gallery button.btn-gallerya a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: #f6f6ec;
+}
+
+.col-gallery-left {
+  grid-area: col-gallery-left;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-gallery-center {
+  grid-area: col-gallery-center;
+  width: 540px;
+  height: 600px;
+  background-color: rgb(56, 50, 148);
+}
+
+.col-gallery-right {
+  grid-area: col-gallery-right;
+  width: 540px;
+  height: 250px;
+  background-color: rgb(126, 82, 25);
+}
+
+.image-left-1 {
+  width: 540px;
+  height: 400px;
+  background-image: url(../img/gallery-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-left-2 {
+  width: 540px;
+  height: 800px;
+  background-image: url(../img/gallery-img-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-center-1 {
+  width: 540px;
+  height: 600px;
+  background-image: url(../img/gallery-img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-center-2 {
+  width: 540px;
+  height: 400px;
+  background-image: url(../img/gallery-img-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-right-1 {
+  width: 540px;
+  height: 250px;
+  background-image: url(../img/gallery-img-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-right-2 {
+  width: 540px;
+  height: 450px;
+  background-image: url(../img/gallery-img-6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-right-3 {
+  width: 540px;
+  height: 400px;
+  background-image: url(../img/gallery-img-7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.collections-container div p.title-gallery {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #12130d;
+  margin-top: 40px;
+}
+
+.collections-container div p.artist-gallery {
+  font-family: "collier-ex-light", serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #12130d;
+  margin-bottom: 80px;
+}
+
+/* collections end */
