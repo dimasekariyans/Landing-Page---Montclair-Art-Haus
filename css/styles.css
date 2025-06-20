@@ -103,6 +103,7 @@ button.btn-hero {
   border-radius: 50px;
   background-color: #f6f6ec;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 button.btn-hero a {
@@ -156,12 +157,15 @@ p.ex-heading-left {
 /* exh content */
 .exhibitions-content-container {
   display: grid;
+  grid-area: 2 / 1 / 3 / 4;
   grid-template-areas:
     "exh-content-image ex-content-detail ex-content-space"
     "exh-content-image-2 ex-content-detail-2 ex-content-space2"
-    "exh-content-image-3 ex-content-detail-3 ex-content-space3";
+    "exh-content-image-3 ex-content-detail-3 ex-content-space3"
+    "exh-bott-border exh-bott-border exh-bott-border"
+    "exh-btn-load exh-btn-load exh-btn-load";
   grid-template-columns: 650px 800px auto;
-  grid-template-rows: 445px 400px 400px;
+  grid-template-rows: 445px 400px 360px 40px 90px;
 }
 
 .exhibitions-content-container p.ex-content-title {
@@ -190,6 +194,7 @@ p.ex-heading-left {
   border-radius: 50px;
   background-color: transparent;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .exhibitions-content-container button a {
@@ -212,7 +217,7 @@ p.ex-heading-left {
   display: flex;
   width: 600px;
   height: 360px;
-  background-image: url(../img/hero-img.jpg);
+  background-image: url(../img/ex-image-1.jpg);
   margin-top: 40px;
 }
 
@@ -224,5 +229,75 @@ p.ex-heading-left {
   flex-direction: column;
 }
 
+.ex-content-detail-container-2 {
+  grid-area: ex-content-detail-2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ex-content-image-2 {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: flex;
+  width: 600px;
+  height: 360px;
+  background-image: url(../img/ex-image-2.jpg);
+}
+
+.ex-content-detail-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.ex-content-detail-container-3 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ex-content-image-3 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  display: flex;
+  width: 600px;
+  height: 360px;
+  background-image: url(../img/ex-image-3.jpg);
+}
+
+.ex-content-detail-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.ex-content-detail-container-3 button.btn-ex-content-2 {
+  margin-bottom: 0;
+}
+
+.exh-bottom-border {
+  grid-area: 4 / 1 / 5 / 4;
+  border-bottom: 2px solid #12130d;
+}
+
+.btn-exh-bottom {
+  grid-area: 5 / 1 / 6 / 4;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-exh-bottom button.btn-exh-load {
+  border: 0;
+  background-color: #12130d;
+  color: #f6f6ec;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.btn-exh-bottom button.btn-exh-load a {
+  color: #f6f6ec;
+  font-weight: 600;
+}
 /* exh content end */
 /* exhibitions end */
